@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="VisualRegression" verbose="1">
+<!--    thread-count="1" parallel="classes"-->
+
+    <listeners>
+        <listener class-name="BaseTestListener"/>
+    </listeners>
+
+    <test name="Test">
+        <classes>
+            <class name="BaseTestInit" />
+            <class name="TestExample" />  <!-- Add your tests between BaseTestInit and BaseTestFinish.-->
+            <class name="BaseTestFinish" />
+        </classes>
+    </test>
+</suite>
